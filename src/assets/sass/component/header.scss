@@ -33,6 +33,8 @@ header{
             a{
                 color:#212B36;
                 font-size: 14px;
+                position: relative;
+                z-index: 2;
             }
             .fa-caret-down {
                 font-size: 13px;
@@ -40,52 +42,54 @@ header{
                 vertical-align: middle;
                 color: #212B36;
             }
-            .sub-menu{
-                position: absolute;
-                top: 100%;
-                left: 0;
-                z-index: 1000;
-                display: none;
-                float: left;
-                min-width: 10rem;
-                padding: 0.5rem 0;
-                margin: 0.125rem 0 0;
-                font-size: 1rem;
-                color: #f0f0f7;
-                text-align: left;
-                list-style: none;
-                background-color: #fff;
-                background-clip: padding-box;
-                border: 1px solid rgba(0, 0, 0, 0.15);
-                border-radius: 0.25rem;
-            }
-            &:hover{
-                > .sub-menu{
-                    display: block;
-                    padding: 0;
-                    top:80%;
-                    .dropdown-item{
-                        display: inline-block;
-                        width: auto;
-                    }
-                    li{
+            @include desktop(){
+                .sub-menu{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    z-index: 1000;
+                    display: none;
+                    float: left;
+                    min-width: 10rem;
+                    padding: 0.5rem 0;
+                    margin: 0.125rem 0 0;
+                    font-size: 1rem;
+                    color: #f0f0f7;
+                    text-align: left;
+                    list-style: none;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid rgba(0, 0, 0, 0.15);
+                    border-radius: 0.25rem;
+                }
+                &:hover{
+                    > .sub-menu{
                         display: block;
-                        line-height: 40px;
-                        border-bottom: 1px solid #eee;
-                        margin: 0;
-                        white-space: nowrap;
-                        padding: 0 15px;
-                        &:hover{
-                            background-color: #eaecf4;
+                        padding: 0;
+                        top:80%;
+                        .dropdown-item{
+                            display: inline-block;
+                            width: auto;
                         }
-                        a{
+                        li{
+                            display: block;
+                            line-height: 40px;
+                            border-bottom: 1px solid #eee;
+                            margin: 0;
+                            white-space: nowrap;
                             padding: 0 15px;
-                            color:#212B36;
-                            text-decoration: none;
-                        }
-                        .sub-menu{
-                            left: 100%;
-                            top:0;
+                            &:hover{
+                                background-color: #eaecf4;
+                            }
+                            a{
+                                padding: 0 15px;
+                                color:#212B36;
+                                text-decoration: none;
+                            }
+                            .sub-menu{
+                                left: 100%;
+                                top:0;
+                            }
                         }
                     }
                 }
@@ -135,7 +139,7 @@ header{
 
     }
     @include desktop(){
-        .collapse:not(.show){
+        .menu-web.collapse:not(.show){
             display: block;
         }
     }
