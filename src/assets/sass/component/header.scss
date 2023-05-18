@@ -1,0 +1,150 @@
+header{
+    background-color: #fff;
+    padding: 17px 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    @include device-1(){
+        .logo{
+            display: none;
+        }
+    }
+    ul{
+        float: right;
+        margin: 0;
+        @include device-1(){
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+      >  li{
+            display: inline-block;
+            margin:0 12px;
+            position: relative;
+            @include device-1(){
+                display: block;
+                line-height: 40px;
+                width: 100%;
+                margin: 0;
+                border-bottom: 1px solid #900;
+            }
+            a{
+                color:#212B36;
+                font-size: 14px;
+            }
+            .fa-caret-down {
+                font-size: 13px;
+                display: inline-block;
+                vertical-align: middle;
+                color: #212B36;
+            }
+            .sub-menu{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 1000;
+                display: none;
+                float: left;
+                min-width: 10rem;
+                padding: 0.5rem 0;
+                margin: 0.125rem 0 0;
+                font-size: 1rem;
+                color: #f0f0f7;
+                text-align: left;
+                list-style: none;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                border-radius: 0.25rem;
+            }
+            &:hover{
+                > .sub-menu{
+                    display: block;
+                    padding: 0;
+                    top:80%;
+                    .dropdown-item{
+                        display: inline-block;
+                        width: auto;
+                    }
+                    li{
+                        display: block;
+                        line-height: 40px;
+                        border-bottom: 1px solid #eee;
+                        margin: 0;
+                        white-space: nowrap;
+                        padding: 0 15px;
+                        &:hover{
+                            background-color: #eaecf4;
+                        }
+                        a{
+                            padding: 0 15px;
+                            color:#212B36;
+                            text-decoration: none;
+                        }
+                        .sub-menu{
+                            left: 100%;
+                            top:0;
+                        }
+                    }
+                }
+            }
+        }
+        .language{
+            button{
+                background-color: unset;
+                outline: 0;
+                border:0;
+                color:#212B36;
+                &:hover,
+                &:active,
+                &:focus{
+                    background-color: unset;
+                    outline: 0;
+                    border:0;
+                    color:#212B36;
+                }
+                i{
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                    margin-right: 4px;
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    font-size: 14px;
+                    vertical-align: middle;
+                }
+            }
+        }
+      
+    }
+    .container{
+        @include device-1(){
+            padding: 0;
+        }
+    }
+    .pos-f-t{
+        @include desktop(){
+            display: none;
+        }
+
+    }
+    @include desktop(){
+        .collapse:not(.show){
+            display: block;
+        }
+    }
+    .navbar{
+        .navbar-toggler{
+            outline: 0;
+            svg {
+                color: #900;
+            }
+        }
+    }
+}

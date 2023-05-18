@@ -1,0 +1,104 @@
+footer{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    .info-title{
+        font-weight: 500;
+        font-size: 15px;
+        color:#212B36;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+    .sologan{
+        font-weight: 400;
+        font-size: 14px;
+        color:#212B36;
+        margin:24px 0 26px 0;
+    }
+    .foot-des{
+        text-align: center;
+        font-size: 14px;
+        color:#212B36;
+        font-weight: 400;
+        margin: 0;
+    }
+    .follow-icon{
+        a{
+            color:#637381;
+            font-size: 18px;
+            margin-right: 25px;
+        }
+    }
+    ul{
+        margin: 0;
+        padding:0;
+        list-style: none;
+        li{
+            display: block;
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 16px;
+            color:#212B36;
+            a{
+                color:#212B36;
+            }
+        }
+        &.f-addr-info{
+            li{
+                display: table;
+                i{
+                    display: table-cell;
+                    vertical-align: middle;
+                    color:#637381;
+                }
+                span{
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding-left: 16px;
+                }
+            }
+        }
+    }
+    .form-field-set{
+        margin-bottom: 10px;
+        fieldset{
+            padding-bottom: 12px;
+        }
+        legend{
+            font-size: 12px;
+            font-weight: 400;
+            display: inline-block;
+            margin-left: 16px;
+            margin-bottom: 0;
+            width: auto;
+            line-height: 5px;
+        }
+        input{
+            border:0;
+            outline: 0;
+            padding:0;
+            margin: 0;
+            background-color: transparent;
+            padding: 0 15px;
+            width: 100%;
+            color:#212B36;
+            font-weight: 300;
+        }
+    }
+}
+.button-red{
+    width: 100%;
+    background-color: #CB2B5C;
+    font-size: 18px;
+    color:#fff;
+    line-height: 48px;
+    outline: 0;
+    border:0;
+    &.xs-size{
+        width: auto;
+        padding:0 20px;
+    }
+}
+.red-lbl{
+    color:#CB2B5C;
+    font-size: 16px;
+}
