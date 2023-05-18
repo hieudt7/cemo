@@ -142,5 +142,25 @@ h3, .h3{
   }
 }
 main{
-  padding-top: 120px;
+  padding-top: 101px;
+  @include device-1(){
+    padding-top: 116px;
+  }
+}
+.custom-tabs{
+  margin-bottom: 30px;
+  border-bottom: 0;
+  li{
+    margin-right: 30px;
+    a{
+      padding-right: 5px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid transparent;
+      &.active,
+      &:hover{
+        border-color:#1C0EC5;
+        text-decoration: none;
+      }
+    }
+  }
 }

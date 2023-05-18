@@ -61,7 +61,7 @@
         padding-left: 11vw;
         @include device-1(){
             padding: 0;
-            margin-bottom: 15px;
+            margin: 15px 0;
         }
     }
     .banner-text {
@@ -104,7 +104,7 @@
             }
         }
         .bn-des {
-            font-size: 18px;
+            font-size: 16px;
             color: #000;
             margin-bottom: 25px;
             @include device-1() {
@@ -308,7 +308,7 @@
                 padding: 10px;
             }
             .w-title {
-                font-weight: 300;
+                font-weight: 500;
                 font-size: 30px;
                 margin-bottom: 10px;
                 @include device-1() {
@@ -643,7 +643,7 @@
         }
         .red-link {
             display: inline-block;
-            font-size: 18px;
+            font-size: 16px;
             color: #cb2b5c;
             font-weight: 300;
         }
@@ -797,7 +797,7 @@
                 }
                 .eltd-item-title {
                     a {
-                        font-size: 18px;
+                        font-size: 16px;
                         line-height: 1em;
                         text-transform: capitalize;
                         color: #909090;
@@ -1030,6 +1030,9 @@
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
+    &.edu-section-bg{
+        background-image: url('/assets/img/edu_2.png');
+    }
     .sec-title {
         color: #fff;
     }
@@ -1116,8 +1119,8 @@ $blue: #00aada;
 
 @mixin fill($position: absolute) {
   position: $position;  
-  bottom: 100px;
-  left: 40px;
+  bottom: 24px;
+  left: 12px;
 }
 .hotline{
     .hotline-container {
