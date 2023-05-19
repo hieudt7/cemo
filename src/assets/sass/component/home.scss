@@ -185,7 +185,7 @@
         background-size: cover;
     }
     .sec-title {
-        margin-bottom: 46px;
+        margin-bottom: 25px;
         @include device-1() {
             margin-bottom: 15px;
         }
@@ -1019,6 +1019,15 @@
             transform: translate(-50%, -50%);
             &:hover {
                 transform: translate(-50%, -50%) scale(0.85);
+            }
+        }
+    }
+    &.me-consult{
+        .box-consulting {
+            i {
+                display: inline-block;
+                width: 66px;
+                margin-bottom: 24px;
             }
         }
     }
