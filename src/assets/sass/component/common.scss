@@ -14,6 +14,7 @@ body {
   }
   
   a {
+    transition: all linear 0.2s;
     &:focus {
       outline: none;
     }
@@ -174,5 +175,10 @@ main{
         text-decoration: none;
       }
     }
+  }
+}
+p{
+  @include device-1(){
+    line-height: 18px;
   }
 }

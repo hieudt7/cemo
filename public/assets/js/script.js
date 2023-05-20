@@ -69,5 +69,16 @@
         },
       ]
     });
+    $('.js-click-video').click(function(e){
+      e.preventDefault();
+      let vidUrl = $(this).attr('href');
+      $('#videoModal').modal('show');
+      // https://www.youtube.com/embed/BhSsopT6h4A
+      let embed = 'https://www.youtube.com/embed/'+vidUrl.split('?v=')[1];
+      $('#iframeYTB').attr('src',embed);
+      $('#videoModal').on('hidden.bs.modal', function (e) {
+        $('#iframeYTB').attr('src','');
+      })
+    })
   });
 })(jQuery); // End of use strict

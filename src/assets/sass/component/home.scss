@@ -27,6 +27,10 @@
 }
 .slick-dots {
     bottom: -50px;
+    @include device-1(){
+        position: relative;
+        bottom: 0;
+    }
     li {
         vertical-align: middle;
         button:before {
@@ -587,6 +591,10 @@
             font-weight: 600;
             white-space: nowrap;
             padding: 0 30px 10px 0;
+            @include device-1(){
+                padding: 15px;
+                white-space: break-spaces;
+            }
         }
     }
     .img-box {
@@ -667,6 +675,8 @@
         margin-top: 29px;
         @include device-1() {
             font-size: 12px;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
     }
     .red-link {
