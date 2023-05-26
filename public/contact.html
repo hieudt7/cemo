@@ -53,14 +53,17 @@
                     </div>
                     <div class="col-md-10 clearfix">
                         <ul>
-                            <li> <a href="#" data-toggle="collapse" data-target="#collapseMobile1" aria-expanded="true">Sản Phẩm 1</a>
-
+                            <li class="menu-item-has-children">
+                                <!-- <a href="#" data-toggle="collapse" data-target="#collapseMobile1"
+                                    aria-expanded="true"></a> -->
+                                <!-- <a href="#" data-toggle="collapse" aria-expanded="true" data-target="#collapseMenuItem0">Sản Phẩm 1</a> --> <a href="#">Sản Phẩm 1</a>
                                 <i class="fa-solid fa-caret-down"></i>
-                                <ul class="sub-menu collapse" id="collapseMobile1">
-                                    <li> <a href="#" data-toggle="collapse" data-target="#collapseMobile2" aria-expanded="true">DirectView</a>
 
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children"> <a href="#">DirectView</a>
                                         <i class="fa-solid fa-caret-down"></i>
-                                        <ul class="sub-menu collapse" id="collapseMobile2">
+
+                                        <ul class="sub-menu collapse">
                                             <li><a href="#">Sản phẩm 1</a>
 
                                             </li>
@@ -123,18 +126,6 @@
     </header>
     <main>
         <section class="section-contact">
-            <!-- <div class="contact-banner">
-        <div class="row align-items-center row-banner">
-          <div class="col-12">
-            <div class="container">
-              <h3 class="b-banner-title">Contact page Title</h3>
-              <p class="b-banner-des"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incidition ullanamico
-                laboris nisi ut aliquip ex ea commo</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
             <div class="container wrap-contact">
                 <div class="row">
                     <div class="col-md-6 contact-info">
@@ -142,46 +133,33 @@
 
                         <p class="des">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
                             dolor emque laudantium, totam rem aperiam.</p>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <ul class="list-info">
-                                    <li>
-                                        <h5>Phone</h5>
+                        <ul class="f-addr-info">
+                            <li> <i class="fa-solid fa-building"></i>
+                                <span>VP Hà Nội: 67 Trần Hưng Đạo, Quận Hoàn Kiếm, TP. Hà Nội</span>
 
-                                    </li>
-                                    <li>
-                                        <h5>Email</h5>
+                            </li>
+                            <li> <i class="fa-solid fa-location-dot"></i>
+                                <span>VP Hồ Chí Minh: 125/43 Đường D1, phường 25, Quận Bình Thạnh, TP.Hồ Chí Minh</span>
 
-                                    </li>
-                                    <li>
-                                        <h5>Address</h5>
+                            </li>
+                            <li> <i class="fa-solid fa-phone"></i>
+                                <span>0296 888 68 69</span>
 
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-9">
-                                <ul class="list-info">
-                                    <li>
-                                        <p>+387648592568</p>
-                                    </li>
-                                    <li>
-                                        <p>expample@gmail.com</p>
-                                    </li>
-                                    <li>
-                                        <p>Hudson 487, New York</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                            </li>
+                            <li> <i class="fa-solid fa-envelope"></i>
+                                <span>info@viewsonic.com.vn</span>
+
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-md-6 contact-form">
                         <form action="">
                             <input type="text" placeholder="Họ tên*">
-                            <input type="text" placeholder="Số điện thoại*">
                             <input type="text" placeholder="Email*">
+                            <input type="text" placeholder="Số điện thoại*">
                             <input type="text" placeholder="Công ty*">
                             <textarea name="" id="" cols="30" rows="5" placeholder="Nhu cầu*"></textarea>
-                            <button class="button-contact">Gửi Tin Nhắn</button>
+                            <button class="button-red">Gửi Tin Nhắn</button>
                         </form>
                     </div>
                 </div>

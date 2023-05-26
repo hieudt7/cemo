@@ -102,3 +102,28 @@ footer{
     color:#CB2B5C;
     font-size: 16px;
 }
+.f-addr-info{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    li{
+        display: table;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 16px;
+        color:#212B36;
+        i{
+            display: table-cell;
+            vertical-align: middle;
+            color:#637381;
+        }
+        a{
+            color:#212B36;
+        }
+        span{
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 16px;
+        }
+    }
+}

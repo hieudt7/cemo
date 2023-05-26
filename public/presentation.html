@@ -53,14 +53,17 @@
                     </div>
                     <div class="col-md-10 clearfix">
                         <ul>
-                            <li> <a href="#" data-toggle="collapse" data-target="#collapseMobile1" aria-expanded="true">Sản Phẩm 1</a>
-
+                            <li class="menu-item-has-children">
+                                <!-- <a href="#" data-toggle="collapse" data-target="#collapseMobile1"
+                                    aria-expanded="true"></a> -->
+                                <!-- <a href="#" data-toggle="collapse" aria-expanded="true" data-target="#collapseMenuItem0">Sản Phẩm 1</a> --> <a href="#">Sản Phẩm 1</a>
                                 <i class="fa-solid fa-caret-down"></i>
-                                <ul class="sub-menu collapse" id="collapseMobile1">
-                                    <li> <a href="#" data-toggle="collapse" data-target="#collapseMobile2" aria-expanded="true">DirectView</a>
 
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children"> <a href="#">DirectView</a>
                                         <i class="fa-solid fa-caret-down"></i>
-                                        <ul class="sub-menu collapse" id="collapseMobile2">
+
+                                        <ul class="sub-menu collapse">
                                             <li><a href="#">Sản phẩm 1</a>
 
                                             </li>
@@ -179,9 +182,14 @@
         </section>
         <section class="section-about-us gray-bg">
             <div class="container">
-                <p>
-                    <img src="./assets/img/p_list_item.png" alt="">
+                <p class="only-pc">
+                    <img src="./assets/img/p_list_item.png" alt="" />
                 </p>
+                <!-- show image for mobile -->
+                <p class="only-mobile">
+                    <img src="./assets/img/p_list_item.png" alt="" />
+                </p>
+                <!-- end show image for mobile -->
             </div>
         </section>
         <section class="section-about-us">

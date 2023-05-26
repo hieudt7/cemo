@@ -13,15 +13,13 @@
             margin-bottom: 8px;
             @include device-1() {
                 font-size: 30px;
+                text-align: center;
             }
         }
         .bn-des {
             font-size: 16px;
             color: #fff;
             margin-bottom: 15px;
-            @include device-1() {
-                font-size: 12px;
-            }
         }
     }
 }
@@ -93,6 +91,7 @@
                     color: #000;
                     @include device-1() {
                         font-size: 24px;
+                        text-align: center;
                     }
                 }
             }
@@ -105,15 +104,13 @@
             width: $xxs-width;
             @include device-1() {
                 font-size: 24px;
+                text-align: center;
             }
         }
         .bn-des {
             font-size: 16px;
             color: #000;
             margin-bottom: 25px;
-            @include device-1() {
-                font-size: 12px;
-            }
         }
     }
     @include device-1(){
@@ -150,14 +147,12 @@
             margin-bottom: 8px;
             @include device-1() {
                 font-size: 24px;
+                text-align: center;
             }
         }
         .bn-des {
             font-size: 16px;
             color: #fff;
-            @include device-1() {
-                font-size: 12px;
-            }
         }
     }
 }
@@ -175,7 +170,7 @@
         .list-feature {
             li {
                 display: table;
-                padding: 19px 5px;
+                padding: 8px 5px;
                 font-size: 14px;
             }
             &.xs-list {
@@ -635,6 +630,7 @@
             margin-bottom: 16px;
             @include device-1() {
                 font-size: 12px;
+                text-align: center;
             }
         }
         .bn-des {
@@ -645,7 +641,6 @@
             max-height: 72px;
             overflow: hidden;
             @include device-1() {
-                font-size: 12px;
                 margin-bottom: 15px;
             }
         }
@@ -674,7 +669,6 @@
         margin-bottom: 25px;
         margin-top: 29px;
         @include device-1() {
-            font-size: 12px;
             margin-top: 15px;
             margin-bottom: 15px;
         }
@@ -1258,4 +1252,12 @@ $blue: #00aada;
   100% {
     transform: rotate(0) scale(1) skew(0deg);
   }
+}
+
+.digital-title{
+    max-width: 700px;
+    margin: 0 auto;
+    @include device-1(){
+        max-width: 100%;
+    }
 }
