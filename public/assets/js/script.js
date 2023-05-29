@@ -2,26 +2,27 @@
     'use strict'; // Start of use strict
     function generateMenu() {
         $('.menu-item-has-children').each(function (index) {
-            $(this).find('a').first().attr('data-toggle', 'collapse');
-            $(this)
-                .find('a')
-                .first()
-                .attr('data-target', '#collapseMenuItem' + index);
-            $(this)
-                .find('a')
-                .first()
-                .attr('aria-controls', 'collapseMenuItem' + index);
-            $(this).find('a').first().attr('aria-expanded', true);
-            $(this)
-                .find('a')
-                .first()
-                .attr('aria-label', 'collapseMenuItem' + index);
-            $(this).find('.sub-menu').first().addClass('collapse');
-            $(this)
-                .find('.sub-menu')
-                .first()
-                .attr('id', 'collapseMenuItem' + index);
-            console.log(index);
+            if($(this).find('a').attr('href') == '#'){
+                $(this).find('a').first().attr('data-toggle', 'collapse');
+                $(this)
+                    .find('a')
+                    .first()
+                    .attr('data-target', '#collapseMenuItem' + index);
+                $(this)
+                    .find('a')
+                    .first()
+                    .attr('aria-controls', 'collapseMenuItem' + index);
+                $(this).find('a').first().attr('aria-expanded', true);
+                $(this)
+                    .find('a')
+                    .first()
+                    .attr('aria-label', 'collapseMenuItem' + index);
+                $(this).find('.sub-menu').first().addClass('collapse');
+                $(this)
+                    .find('.sub-menu')
+                    .first()
+                    .attr('id', 'collapseMenuItem' + index);
+            }
         });
         // $('.collapse').collapse();
     }

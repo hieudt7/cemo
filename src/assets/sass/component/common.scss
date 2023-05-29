@@ -41,6 +41,7 @@ img {
     display: inline-block;
     @include device-1() {
         padding: 5px 15px;
+        margin: 15px 0;
     }
     &:hover {
         background-color: #cb2b5c;
@@ -100,6 +101,7 @@ fieldset {
 }
 .web-logo {
     width: 120px;
+    margin: unset;
 }
 .tooltip {
     font-family: $font-family;
@@ -137,8 +139,8 @@ h3,
         text-align: left;
     }
 }
-.only-mobile{
-  display: none;
+.only-mobile {
+    display: none;
 }
 @include device-1() {
     footer {
@@ -158,19 +160,20 @@ h3,
     .bn-title {
         text-align: center;
         font-size: 22px;
+        width: 100%;
     }
-    .only-pc{
-      display: none;
+    .only-pc {
+        display: none;
     }
-    .only-mobile{
-      display: block;
+    .only-mobile {
+        display: block;
     }
 }
 
 main {
     padding-top: 101px;
     @include device-1() {
-        padding-top: 116px;
+        padding-top: 87px;
     }
 }
 .custom-tabs {
@@ -219,6 +222,9 @@ p {
     }
 }
 
-.no-pd{
-  padding: 0;
+.no-pd {
+    padding: 0;
+    @include device-1() {
+        padding: 15px;
+    }
 }

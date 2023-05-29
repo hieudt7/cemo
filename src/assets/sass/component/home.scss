@@ -101,7 +101,6 @@
             font-weight: 500;
             color: #000;
             margin-bottom: 8px;
-            width: $xxs-width;
             @include device-1() {
                 font-size: 24px;
                 text-align: center;
@@ -160,6 +159,26 @@
     padding-top: 80px;
     background-image: url('/assets/img/bg_1.webp');
     background-size: 100% 100%;
+    &.home-feature{
+        min-height: 618px;
+        @include device-1(){
+            min-height: none;
+        }
+        .sec-title{
+            margin-bottom: 94px;
+            @include device-1(){
+                margin-bottom: 15px;
+            }
+        }
+        .list-feature{
+            li{
+                padding: 19px 14px;
+                @include device-1(){
+                    padding:10px 10px;
+                }
+            }
+        } 
+    }
     &.no-bg {
         background-image: none;
         padding-top: 80px;
@@ -171,7 +190,7 @@
             li {
                 display: table;
                 padding: 8px 5px;
-                font-size: 14px;
+                font-size: 16px;
             }
             &.xs-list {
                 li {
@@ -226,9 +245,15 @@
         margin: 0;
         list-style: none;
         padding-top: 15px;
+        @include device-1(){
+            text-align: center;
+        }
         li {
             display: inline-block;
             margin-right: 30px;
+            @include device-1(){
+                margin: 15px !important;
+            }
             &:last-child {
                 margin: 0;
             }
@@ -891,7 +916,6 @@
             .des {
                 font-size: 16px;
                 font-weight: 300;
-                color: #989898;
                 margin-bottom: 30px;
             }
             .list-info {
@@ -941,6 +965,17 @@
                 &:focus {
                     background-color: rgba(255, 255, 255, 1);
                     border-color: rgba(144, 144, 144, 1);
+                }
+                &.button-for-input{
+                    width: 100%;
+                    background-color: #CB2B5C;
+                    font-size: 18px;
+                    color: #fff;
+                    line-height: 48px;
+                    outline: 0;
+                    border: 0;
+                    height: 50px;
+                    padding: 0;
                 }
             }
             .button-contact {
@@ -1124,7 +1159,7 @@
 // hotline
 $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
-$blue: #00aada;
+$blue: #3260AC;
 
 @mixin fill($position: absolute) {
   position: $position;  
@@ -1259,5 +1294,35 @@ $blue: #00aada;
     margin: 0 auto;
     @include device-1(){
         max-width: 100%;
+    }
+}
+.list-with-star{
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            display: table;
+            padding: 8px 20px;
+            position: relative;
+            &:before{
+                content:"";
+                width: 40px;
+                height: 40px;
+                background-image: url('/assets/img/bullet.png');
+                background-size: 100% 100%;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            span {
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 10px;
+            }
+            &.active,
+            &:hover {
+                background-color: #fff;
+            }
+        }
     }
 }
