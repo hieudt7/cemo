@@ -1392,7 +1392,7 @@ $blue: #3260AC;
 }
 .text-left-mb{
     @include device-1(){
-        text-align-last: left !important;
+        text-align: left !important;
         margin: 10px 0;
     }
 }
