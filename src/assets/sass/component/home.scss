@@ -1376,3 +1376,29 @@ $blue: #3260AC;
 
     }
 }
+.direct-view-color{
+    margin-bottom: 60px;
+    @include device-1(){
+        margin-bottom: 30px;
+    }
+}
+.no-mg-mb{
+    @include device-1(){
+        margin: 0 !important;
+        .btn-black{
+            margin-bottom: 0;
+        }
+    }
+}
+.text-left-mb{
+    @include device-1(){
+        text-align-last: left !important;
+        margin: 10px 0;
+    }
+}
+.edu-wrap-screen{
+    margin-top: 112px;
+    @include device-1(){
+        margin-top: 30px;
+    }
+}
