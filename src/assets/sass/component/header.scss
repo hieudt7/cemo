@@ -6,7 +6,10 @@ header{
     left: 0;
     width: 100%;
     z-index: 999;
+    min-height: 100px;
     @include device-1(){
+        min-height: 90px;
+        padding: 0;
         .logo{
             display: none;
         }
@@ -92,6 +95,11 @@ header{
                             }
                         }
                     }
+                }
+            }
+            @include device-1(){
+                .sub-menu:not(.collapse){
+                    display: none;
                 }
             }
         }

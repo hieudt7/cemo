@@ -73,7 +73,6 @@ img {
     font-size: 30px;
     color: #000;
     margin-bottom: 38px;
-    text-align: center;
     font-weight: 500;
     @include device-1() {
         font-size: 22px;
@@ -171,9 +170,9 @@ h3,
 }
 
 main {
-    padding-top: 101px;
+    padding-top: 100px;
     @include device-1() {
-        padding-top: 87px;
+        padding-top: 90px;
     }
 }
 .custom-tabs {

@@ -28,6 +28,7 @@
     @include device-1(){
         position: relative;
         bottom: 0;
+        margin: 10px 0;
     }
     li {
         vertical-align: middle;
@@ -118,6 +119,15 @@
             margin-top: 15px;
         }
     }
+    &.home-banner{
+        @include device-1(){
+            .banner-text{
+                .bn-title{
+                    text-align: left;
+                }
+            } 
+        }
+    }
 }
 .section-solution {
     padding-top: 80px;
@@ -165,14 +175,18 @@
             min-height: none;
         }
         .sec-title{
-            margin-bottom: 94px;
+            margin-bottom: 70px;
+            text-align: left;
+            width: 395px;
             @include device-1(){
                 margin-bottom: 15px;
+                width: 100%;
             }
         }
         .list-feature{
             li{
-                padding: 19px 14px;
+                padding: 15px 14px;
+                width: 100%;
                 @include device-1(){
                     padding:10px 10px;
                 }
@@ -384,6 +398,9 @@
     .container {
         padding: 60px 0;
         position: relative;
+        @include device-1(){
+            padding: 0;
+        }
     }
 }
 .company-brand {
@@ -654,7 +671,8 @@
             font-weight: 400;
             margin-bottom: 16px;
             @include device-1() {
-                font-size: 12px;
+                font-size: 16px;
+                margin: 15px 0;
                 text-align: center;
             }
         }
@@ -1050,6 +1068,9 @@
         text-align: center;
         position: relative;
         margin-top: 120px;
+        @include device-1(){
+            margin-top: 15px;
+        }
         .video-btn {
             display: inline-block;
             position: absolute;
@@ -1087,8 +1108,11 @@
 .space-title-solution {
     width: 600px;
     margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
     @include device-1(){
         width: 100%;
+        margin-bottom: 20px;
     }
 }
 .sec-pattern {
@@ -1128,6 +1152,16 @@
                     list-style: disc;
                 }
             }
+        }
+    }
+    .sec-title{
+        width: 830px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+        @include device-1(){
+            width: 100%;
+            margin-bottom: 20px;
         }
     }
 }
@@ -1324,5 +1358,21 @@ $blue: #3260AC;
                 background-color: #fff;
             }
         }
+    }
+}
+.wrap-container-edu{
+    width: 970px;
+    margin: 0 auto;
+    .cus-sec-tit {
+        width: 750px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        @include device-1(){
+            width: 100%;
+        }
+    }
+    @include device-1(){
+        width: 100%;
+
     }
 }
