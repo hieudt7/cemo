@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.15.4",
-      "/Users/hieudt/Documents/Work/hieudt/cemo"
+      "D:\\cemo-main\\cemo-main"
     ]
   ],
   "_development": true,
@@ -28,7 +28,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.4.tgz",
   "_spec": "5.15.4",
-  "_where": "/Users/hieudt/Documents/Work/hieudt/cemo",
+  "_where": "D:\\cemo-main\\cemo-main",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",

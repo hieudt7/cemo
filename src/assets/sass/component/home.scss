@@ -1358,12 +1358,13 @@ $blue: #3260ac;
             position: relative;
             &:before {
                 content: '';
-                width: 40px;
-                height: 40px;
-                background-image: url('/assets/img/bullet.png');
+                width: 6px;
+                height: 6px;
+                background-image: url('https://cemco.viewsonic.com.vn/wp-content/themes/cemco-2023/assets/img/bullet.png');
                 background-size: 100% 100%;
-                display: table-cell;
+                display: inline-block;
                 vertical-align: middle;
+                margin-top: 8px;
             }
             span {
                 display: table-cell;
@@ -1435,6 +1436,65 @@ $blue: #3260ac;
             @include device-1(){
                 width: auto;
                 height: auto;
+            }
+        }
+    }
+}
+.new-gray-bg{
+    background-color: #f5f6f6;
+}
+.count-number{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    li{
+        display: inline-block;
+        width: 50%;
+        padding: 8px;
+      
+        .wrap-box{
+            background: #3D5AAA; 
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2), 0px 12px 24px -4px rgba(0, 0, 0, 0.12);
+            border-radius: 12px;
+            min-height: 147px;
+            position: relative;
+            .wrap-text{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: #fff;
+                text-align: center;
+                font-size: 70px;
+                font-weight: 700;
+                @include device-1(){
+                    font-size: 50px;
+                }
+                span{
+                    display: inline-block;
+                    line-height: 92px;
+                    @include device-1(){
+                        line-height: 62px;
+                    }
+                }
+                p{
+                    font-size: 24px;
+                    font-weight: 400;
+                    @include device-1(){
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &:nth-child(2),
+        &:nth-child(3){
+            .wrap-box{
+                background: #fff; 
+                .wrap-text{
+                    color: #3D5AAA;
+                }
             }
         }
     }

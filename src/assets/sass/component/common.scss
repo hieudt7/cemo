@@ -35,19 +35,20 @@ img {
     }
 }
 .btn-black {
-    color: #000;
-    border: 1px solid #000;
+    color: #fff ;
+    border: 1px solid #0068b5 ;
     padding: 10px 30px;
     display: inline-block;
+    background-color: #0068b5 ;
     @include device-1() {
         padding: 5px 15px;
         margin: 15px 0;
     }
     &:hover {
-        background-color: #cb2b5c;
-        border-color: #cb2b5c;
-        color: #fff;
+        background-color: #00285a ;
+        border-color: #00285a ;
         text-decoration: none;
+        color:#fff;
     }
 }
 .carousel-indicators {
